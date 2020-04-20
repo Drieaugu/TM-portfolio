@@ -1,73 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:700');
-
+@import url(https://fonts.googleapis.com/css?family=Poppins:700);
 .snap-container {
   scroll-behavior: smooth;
   height: 100vh;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
-html,
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   background-color: #ebece9;
 }
-
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
 }
-
 .masthead {
   height: 100%;
-  background-image: url('../img/background.jpg');
+  background-image: url(../img/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 5vh;
 }
-
 .navbar {
-  background: none;
+  background: 0 0;
 }
-
+.navbar-light-font {
+  border-color: #e9ebe8 !important;
+}
 .container-fluid {
   height: 100%;
 }
-
 .slide {
-  height: 100%;
-  background: rgb(233, 235, 232);
-  background: linear-gradient(90deg, rgba(233, 235, 232, 1) 0%, rgba(224, 226, 221, 1) 100%);
+  min-height: 100%;
+  background: #e9ebe8;
+  background: linear-gradient(90deg, rgba(233, 235, 232, 1) 0, rgba(224, 226, 221, 1) 100%);
 }
-
 .parallax-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/parallax.jpg');
-  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/parallax.jpg);
+  min-height: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .parallax-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/parallax-2.jpg');
-  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/parallax-2.jpg);
+  min-height: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.parallax-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/parallax-3.jpg);
+  min-height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media screen and (min-width: 992px) {
   .parallax h1,
   .parallax h2,
@@ -75,29 +73,22 @@ h1 {
     padding-right: 20px;
   }
 }
-
 .parallax h1,
 .parallax h2,
 .parallax p {
   color: #ebece9;
 }
-
-@media screen and (max-width: 991px) {
-  .parallax h1 {
-    font-size: 4vh;
-  }
-
-  .parallax h2 {
-    font-size: 3vh;
-  }
-}
-
-.parallax p {
-  font-size: 2.3vh;
-  padding-bottom: 20px;
-}
-
 .headshot {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .enlarge-hover {
+    z-index: 9999;
+    transition: all 0.3s;
+  }
+  .enlarge-hover:hover {
+    margin-right: 50px;
+    transform: scale(1.5);
+  }
 }

@@ -1,275 +1,414 @@
 <!DOCTYPE html>
 <html lang="nl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dries Augustyns Portfolio</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/css/preloader.css" />
+        <link rel="stylesheet" href="./assets/css/cover.css" />
+        <link rel="stylesheet" href="./assets/css/readMore.css" />
+        <link rel="stylesheet" href="./assets/css/snap.css" media="screen and (min-width: 991px)" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+        <link rel="manifest" href="/icon/site.webmanifest" />
+        <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#ff5757" />
+        <link rel="shortcut icon" href="/icon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-config" content="/icon/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="author" content="Dries Augustyns" />
+        <meta name="description" content="Het portfolio van Dries Augustyns. Student aan de IT-Factory van Thomas More Geel." />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dries Augustyns Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/preloader.css">
-    <link rel="stylesheet" href="./assets/css/cover.css">
-    <link rel="stylesheet" href="./assets/css/topButton.css">
-    <link rel="stylesheet" href="./assets/css/snap.css" media="screen and (min-width: 991px)">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
-    <link rel="manifest" href="/icon/site.webmanifest">
-    <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#ff5757">
-    <link rel="shortcut icon" href="/icon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="/icon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-</head>
-
-<body>
-    <div id="loading">
-        <img id="loading-image" src="./assets/img/loader.svg" class="img-fluid" alt="Loading..." />
-    </div>
-    <div class="snap-container">
-        <header class="masthead snap container-fluid" id="topSection">
-            <nav class="navbar navbar-expand-lg navbar-light navbar-right bg-none">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#voorstelling">Voorstelling</a>
-                        <a class="nav-item nav-link d-block d-sm-block d-lg-none" href="#teamwerk_sm">Teamwerk</a>
-                        <a class="nav-item nav-link d-none d-sm-none d-md-none d-lg-block"
-                            href="#teamwerk_lg">Teamwerk</a>
-                        <a class="nav-item nav-link" href="#incompetentie">Incompetentie</a>
-                        <a class="nav-item nav-link d-block d-sm-block d-lg-none" href="#fotografie_sm">Fotografie</a>
-                        <a class="nav-item nav-link d-none d-sm-none d-md-none d-lg-block"
-                            href="#fotografie_lg">Fotografie</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12 text-left">
-                        <h1>Dries</h1>
-                        <h1>Augustyns</h1>
-                        <p class="lead">Gedreven, Mondig, Leider</p>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div id="voorstelling" class="parallax parallax-1 snap">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-md-12 col-lg-4 text-center">
-                        <img src="./assets/img/dries-headshot.jpg" width="300px"
-                            class="headshot img-fluid rounded-circle mx-auto" alt="Foto Dries">
-                    </div>
-                    <div class="col-md-12 col-lg-8 text-center text-lg-left">
-                        <h1>Voorstelling</h1>
-                        <h2>Dries Augustyns [28/07/2001]</h2>
-                        <p class="lead">Hoe zijn we hier geraakt? Misschien stel ik mezelf best even voor. Ik ben Dries
-                            Augustyns en zit in mijn eerste jaar van de IT-factory in Thomas More Geel. In mijn vrije
-                            tijd
-                            houd ik me graag bezig met programmeren en mijn eigen projecten opstarten. Als je me nog
-                            beter
-                            wil leren kennen dan raad ik je aan om mijn portfolio eens te verkennen!</p>
-                    </div>
-                </div>
-            </div>
+    <body>
+        <div id="loading">
+            <img id="loading-image" src="./assets/img/loader.svg" class="img-fluid" alt="Loading..." />
         </div>
+        <div class="snap-container">
+            <header class="masthead snap container-fluid min-vh-100" tabindex="1" id="topSection">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-right bg-none">
+                    <button
+                        class="navbar-toggler collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarNavAltMarkup" style="">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#voorstelling">Voorstelling</a>
+                            <a class="nav-item nav-link d-block d-sm-block d-lg-none" href="#teamwerk_sm">Teamwerk</a>
+                            <a class="nav-item nav-link d-none d-sm-none d-md-none d-lg-block" href="#teamwerk_lg">Teamwerk</a>
+                            <a class="nav-item nav-link" href="#incompetentie">Koppigheid</a>
+                            <a class="nav-item nav-link d-block d-sm-block d-lg-none" href="#fotografie_sm">Fotografie</a>
+                            <a class="nav-item nav-link d-none d-sm-none d-md-none d-lg-block" href="#fotografie_lg">Fotografie</a>
+                            <a class="nav-item nav-link" href="#skillset">Skillset</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container min-vh-100">
+                    <div class="row min-vh-100 align-items-center">
+                        <div class="col-12 text-left">
+                            <h1>Dries</h1>
+                            <h1>Augustyns</h1>
+                            <p class="lead">Gedreven, Mondig, Leider</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="voorstelling" tabindex="2" class="parallax parallax-1 snap">
+                <div class="container min-vh-100">
+                    <div class="row min-vh-100 align-items-center">
+                        <div class="col-md-12 col-lg-4 text-center">
+                            <img
+                                src="./assets/img/dries-headshot.jpg"
+                                width="300px"
+                                class="headshot img-fluid rounded-circle mx-auto"
+                                alt="Foto Dries"
+                            />
+                        </div>
+                        <div class="col-md-12 col-lg-8 text-center text-lg-left">
+                            <h1>Voorstelling</h1>
+                            <h2>Dries Augustyns [28/07/2001]</h2>
+                            <p class="lead">
+                                Hoe zijn we hier geraakt? Laat ik mezelf eens even voorstellen. Ik ben Dries Augustyns en zit in mijn eerste
+                                jaar van de IT Factory in Thomas More Geel. In mijn vrije tijd houd ik me graag bezig met programmeren,
+                                fotografie en mijn eigen projecten opstarten. De keuze voor deze opleiding was bij mij snel gemaakt. Als van
+                                jongs af aan vind ik computers interessant en ook in het middelbaar volgde ik al twee jaar
+                                Informaticabeheer. Als je me nog beter wil leren kennen dan raad ik je aan om mijn portfolio eens te
+                                verkennen!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Small -->
-        <div class="slide snap d-block d-sm-block d-lg-none" id="teamwerk_sm">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-md-12 col-lg-4 text-center">
-                        <img src="./assets/img/teamwork.jpg" class="rounded-circle img-fluid" width="300" height="300"
-                            alt="Teamwerk">
-                    </div>
-                    <div class="col-md-12 col-lg-8 text-center text-lg-right">
-                        <h1>Bewijsstuk</h1>
-                        <h2>Teamwerk</h2>
-                        <p class="lead">Bewijzen dat je samen kan werken met mensen is soms moeilijk. Toch
-                            hoop ik dat hier te doen! Enkele projecten die me daarbij kunnen helpen zijn <a
-                                href="http://eduweb.thomasmore.be/MINA03/min/nl/index.html">de website voor Actie
-                                MIN</a>, de verschillende repositories op <a href="https://github.com/drieaugu">mijn
-                                Github</a>, maar waar ik nog trotser op ben is <a href="" data-toggle="modal"
-                                data-target="#exampleModal-sm">deze
-                                recommendation op
-                                mijn LinkedIn-profiel</a>!
-                        </p>
-                    </div>
-                    <div class="modal fade" id="exampleModal-sm" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">LinkedIn Recommendation</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="./assets/img/recommendation.png" class="img-fluid"
-                                        alt="LinkedIn aanbeveling">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            <!-- Small -->
+            <div class="slide snap d-block d-sm-block d-lg-none" tabindex="3" id="teamwerk_sm">
+                <div class="container min-vh-100">
+                    <div class="row min-vh-100 align-items-center">
+                        <div class="col-md-12 col-lg-4 text-center">
+                            <img src="./assets/img/teamwork.jpg" class="rounded-circle img-fluid" width="300" height="300" alt="Teamwerk" />
+                        </div>
+                        <div class="col-md-12 col-lg-8 text-center text-lg-right">
+                            <h1>Teamwerk</h1>
+                            <p class="lead">
+                                Bewijzen dat je samen kan werken met mensen is soms moeilijk. Toch hoop ik dat hier te doen! Enkele
+                                projecten die me daarbij kunnen helpen zijn
+                                <a target="_blank" href="http://eduweb.thomasmore.be/MINA03/min/nl/index.html">de website voor Actie MIN</a
+                                >. Deze website is het resultaat van een samenwerking tussen mij en twee medestudenten voor het Keuzeproject
+                                1. Maar iets waar ik nog trotser op ben is
+                                <a href data-toggle="modal" data-target="#recommendation-sm">deze recommendation op mijn LinkedIn-profiel</a
+                                >!
+                                <span id="teamwerk_sm_more" class="more"
+                                    >De schrijver, Allistair, is een Engelse vriend van me. We programmeren regelmatig samen en we proberen
+                                    elkaar zoveel mogelijk bij te leren. Dankzij hem ben ik ook begonnen met het leren van verschillende
+                                    JavaScript frameworks. Er is één repository die ik graag nog extra in de kijker zet en dat is die voor
+                                    het
+                                    <a target="_blank" href="https://github.com/Drieaugu/ps-mass-rename"
+                                        >project van Windows System Administration</a
+                                    >. In dit project hebben Victor Welters en ik, uitgebreid samengewerkt om een compleet PowerShell te
+                                    schrijven.</span
+                                >
+                                <a
+                                    href="javascript:;"
+                                    onclick="readMore('#teamwerk_sm_more', '#teamwerk_sm_more_button')"
+                                    id="teamwerk_sm_more_button"
+                                    >Lees meer...</a
+                                >
+                            </p>
+                        </div>
+                        <div
+                            class="modal fade"
+                            id="recommendation-sm"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            LinkedIn Recommendation
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./assets/img/recommendation.png" class="img-fluid" alt="LinkedIn aanbeveling" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Large -->
-        <div class="slide snap d-none d-sm-none d-md-none d-lg-block" id="teamwerk_lg">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-md-12 col-lg-8 text-center text-lg-right">
-                        <h1>Bewijsstuk</h1>
-                        <h2>Teamwerk</h2>
-                        <p class="lead">Bewijzen dat je samen kan werken met mensen is soms moeilijk. Toch
-                            hoop ik dat hier te doen! Enkele projecten die me daarbij kunnen helpen zijn <a
-                                href="http://eduweb.thomasmore.be/MINA03/min/nl/index.html">de website voor Actie
-                                MIN</a>, de verschillende repositories op <a href="https://github.com/drieaugu">mijn
-                                Github</a>, maar waar ik nog trotser op ben is <a href="" data-toggle="modal"
-                                data-target="#exampleModal-lg">deze
-                                recommendation op
-                                mijn LinkedIn-profiel</a>!
-                        </p>
-                    </div>
-                    <div class="modal fade" id="exampleModal-lg" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">LinkedIn Recommendation</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="./assets/img/recommendation.png" class="img-fluid"
-                                        alt="LinkedIn aanbeveling">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            <!-- Large -->
+            <div class="slide snap d-none d-sm-none d-md-none d-lg-block" tabindex="3" id="teamwerk_lg">
+                <div class="container min-vh-100">
+                    <div class="row min-vh-100 align-items-center">
+                        <div class="col-md-12 col-lg-8 text-center text-lg-right">
+                            <h1>Teamwerk</h1>
+                            <p class="lead">
+                                Bewijzen dat je samen kan werken met mensen is soms moeilijk. Toch hoop ik dat hier te doen! Enkele
+                                projecten die me daarbij kunnen helpen zijn
+                                <a target="_blank" href="http://eduweb.thomasmore.be/MINA03/min/nl/index.html">de website voor Actie MIN</a
+                                >. Deze website is het resultaat van een samenwerking tussen mij en twee medestudenten voor het Keuzeproject
+                                1. Maar iets waar ik nog trotser op ben is
+                                <a href="" data-toggle="modal" data-target="#recommendation-lg"
+                                    >deze recommendation op mijn LinkedIn-profiel</a
+                                >!
+                                <span id="teamwerk_lg_more" class="more"
+                                    >De schrijver, Allistair, is een Engelse vriend van me. We programmeren regelmatig samen en we proberen
+                                    elkaar zoveel mogelijk bij te leren. Dankzij hem ben ik ook begonnen met het leren van verschillende
+                                    JavaScript frameworks. Er is één repository die ik graag nog extra in de kijker zet en dat is die voor
+                                    het
+                                    <a target="_blank" href="https://github.com/Drieaugu/ps-mass-rename"
+                                        >project van Windows System Administration</a
+                                    >. In dit project hebben Victor Welters en ik, uitgebreid samengewerkt om een compleet PowerShell te
+                                    schrijven.</span
+                                >
+                                <a
+                                    href="javascript:;"
+                                    onclick="readMore('#teamwerk_lg_more', '#teamwerk_lg_more_button')"
+                                    id="teamwerk_lg_more_button"
+                                    >Lees meer...</a
+                                >
+                            </p>
+                        </div>
+                        <div
+                            class="modal fade"
+                            id="recommendation-lg"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel-lg">
+                                            LinkedIn Recommendation
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./assets/img/recommendation.png" class="img-fluid" alt="LinkedIn aanbeveling" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-12 col-lg-4 text-center">
+                            <img src="./assets/img/teamwork.jpg" class="rounded-circle img-fluid" width="300" height="300" alt="Teamwerk" />
+                        </div>
                     </div>
-                    <div class="col-md-12 col-lg-4 text-center">
-                        <img src="./assets/img/teamwork.jpg" class="rounded-circle img-fluid" width="300" height="300"
-                            alt="Teamwerk">
+                </div>
+            </div>
+
+            <div class="slide snap parallax parallax-2" tabindex="4" id="incompetentie">
+                <div class="container min-vh-100">
+                    <div class="row min-vh-100 align-items-center">
+                        <div class="col-md-12 col-lg-4 text-center">
+                            <img
+                                src="./assets/img/growth.jpg"
+                                width="300px"
+                                class="img-fluid rounded-circle mx-auto"
+                                alt="Plant in het zand"
+                            />
+                        </div>
+                        <div class="col-md-12 col-lg-8 text-center text-lg-left">
+                            <h1>Koppigheid</h1>
+                            <p class="lead">
+                                Onder het motto: "Zelfkennis is het begin van alle wijsheid", stel ik ook even een incompetentie voor. Ik
+                                zal altijd strijden voor mijn gelijk. Als ik zeg altijd, dan bedoel ik ook altijd. Dit botst af en toe wel
+                                eens tijdens groepswerken maar het is iets waar ik aan probeer te werken. Het is iets dat al lang in me zit
+                                maar het is toch al fel geminderd tegenover vroeger.
+                                <span id="koppigheid_more" class="more"
+                                    >Zo ben ik dit jaar in de studentenraad voor de IT Factory gestapt. In deze raad krijgen de studenten
+                                    van onze opleiding meer inspraak in de: leerstof, examens... In de vergaderingen die we gehouden hebben,
+                                    leer ik steeds meer dat je met luisteren vaak verder komt dan je eigen mening doorduwen. Dit zou ik
+                                    omschrijving als een groeiproces want enkele jaren geleden was luisteren naar anderen hun mening af en
+                                    toe een probleem voor mij.</span
+                                >
+                                <a
+                                    href="javascript:;"
+                                    onclick="readMore('#koppigheid_more', '#koppigheid_more_button')"
+                                    id="koppigheid_more_button"
+                                    >Lees meer...</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Small -->
+            <div class="slide snap d-block d-sm-block d-lg-none" tabindex="5" id="fotografie_sm">
+                <div class="container min-vh-100">
+                    <div class="row min-vh-100 align-items-center">
+                        <div class="col-md-12 col-lg-4 text-center">
+                            <img
+                                src="./assets/img/fotografie.jpg"
+                                class="rounded-circle img-fluid"
+                                width="300"
+                                height="300"
+                                alt="Teamwerk"
+                            />
+                        </div>
+                        <div class="col-md-12 col-lg-8 text-center text-lg-right">
+                            <h1>Fotografie</h1>
+                            <p class="lead">
+                                Deze kunst is al een tijdje een passie van me. Mijn oorspronkelijke plan was om fotografie te gaan studeren
+                                maar helaas is dat in deze dagen van technologie niet meer zo'n winstgevend beroep. Wil je mijn werk
+                                bewonderen dan kan je altijd eens kijken op
+                                <a target="_blank" href="https://unsplash.com/@drieaugu">mijn Unsplash</a>. Ook de foto van dit onderdeel is
+                                een creatie van mezelf!
+                                <span id="fotografie_sm_more" class="more"
+                                    >Hier zou ik graag even een terugkoppeling naar mijn softskills willen maken. In deze maatschappij
+                                    dragen we privacy hoog in het vaandel. De foto's met mensen op mag je niet meer zomaar uploaden. Daar
+                                    moet je toestemming voor vragen en dat is dus een moment waar ik mijn softskills al meermaals heb kunnen
+                                    toepassen.</span
+                                >
+                                <a
+                                    href="javascript:;"
+                                    onclick="readMore('#fotografie_sm_more', '#fotografie_sm_more_button')"
+                                    id="fotografie_sm_more_button"
+                                    >Lees meer...</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Large -->
+            <div class="slide snap d-none d-sm-none d-md-none d-lg-block" tabindex="5" id="fotografie_lg">
+                <div class="container min-vh-100">
+                    <div class="row min-vh-100 align-items-center">
+                        <div class="col-md-12 col-lg-8 text-center text-lg-right">
+                            <h1>Fotografie</h1>
+                            <p class="lead">
+                                Deze kunst is al een tijdje een passie van me. Mijn oorspronkelijke plan was om fotografie te gaan studeren
+                                maar helaas is dat in deze dagen van technologie niet meer zo'n winstgevend beroep. Wil je mijn werk
+                                bewonderen dan kan je altijd eens kijken op
+                                <a target="_blank" href="https://unsplash.com/@drieaugu">mijn Unsplash</a>. Ook de foto van dit onderdeel is
+                                een creatie van mezelf!
+                                <span id="fotografie_lg_more" class="more"
+                                    >Hier zou ik graag even een terugkoppeling naar mijn softskills willen maken. In deze maatschappij
+                                    dragen we privacy hoog in het vaandel. De foto's met mensen op mag je niet meer zomaar uploaden. Daar
+                                    moet je toestemming voor vragen en dat is dus een moment waar ik mijn softskills al meermaals heb kunnen
+                                    toepassen.</span
+                                >
+                                <a
+                                    href="javascript:;"
+                                    onclick="readMore('#fotografie_lg_more', '#fotografie_lg_more_button')"
+                                    id="fotografie_lg_more_button"
+                                    >Lees meer...</a
+                                >
+                            </p>
+                        </div>
+                        <div class="col-md-12 col-lg-4 text-center">
+                            <img
+                                src="./assets/img/fotografie.jpg"
+                                class="rounded-circle img-fluid"
+                                width="300"
+                                height="300"
+                                alt="Teamwerk"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide snap parallax parallax-3" id="skillset">
+                <div class="container min-vh-100">
+                    <div class="row min-vh-100 align-items-center">
+                        <div class="col-md-12 col-lg-4 text-center">
+                            <img
+                                src="./assets/img/skills.png"
+                                class="rounded-circle img-fluid enlarge-hover"
+                                width="300"
+                                height="300"
+                                alt="Teamwerk"
+                            />
+                        </div>
+                        <div class="col-md-12 col-lg-8 text-center text-lg-left">
+                            <h1>Mijn Skillset</h1>
+                            <p class="lead">
+                                Ik zie mezelf eerder naar de kant van Toegepaste Informatica gaan. Momenteel twijfel ik nog tussen App en
+                                AI, alhoewel ik toch een iets grotere interesse heb voor AI. Ik kan sowieso Electronica-ICT al uitsluiten
+                                want deze richting is echt niets voor mij. Ik heb in dit jaar wel geleerd dat je met het nodige
+                                doorzettingsvermogen alles kan bereiken.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="slide snap parallax parallax-2" id="incompetentie">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-md-12 col-lg-4 text-center">
-                        <img src="./assets/img/growth.jpg" width="300px" class="img-fluid rounded-circle mx-auto"
-                            alt="Plant in het zand">
-                    </div>
-                    <div class="col-md-12 col-lg-8 text-center text-lg-left">
-                        <h1>Incompetentie</h1>
-                        <h2>Koppigheid</h2>
-                        <p class="lead">Onder het motto: "Zelfkennis is het begin van alle wijsheid", stel ik ook even
-                            een incompetentie voor. Ik zal altijd strijden voor mijn gelijk. Als ik zeg altijd, dan
-                            bedoel ik ook altijd. Dit botst af en toe wel eens tijdens groepswerken maar het is iets
-                            waar ik aan probeer te werken. Het is iets dat al lang in me zit maar het is toch al fel
-                            geminderd tegenover vroeger.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://kit.fontawesome.com/ad873fe8dc.js" crossorigin="anonymous"></script>
+        <script>
+            window.onload = function () {
+                jQuery('.navbar').hide();
+                setTimeout(fade_out, 500);
+            };
 
-        <!-- Small -->
-        <div class="slide snap d-block d-sm-block d-lg-none" id="fotografie_sm">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-md-12 col-lg-4 text-center">
-                        <img src="./assets/img/fotografie.jpg" class="rounded-circle img-fluid" width="300" height="300"
-                            alt="Teamwerk">
-                    </div>
-                    <div class="col-md-12 col-lg-8 text-center text-lg-right">
-                        <h1>Bewijsstuk</h1>
-                        <h2>Fotografie</h2>
-                        <p class="lead">Deze kunst is al een tijdje een passie van me. Mijn oorspronkelijke plan was om
-                            fotografie te gaan studeren maar helaas is dat in deze dagen van technologie niet meer zo'n
-                            winstgevend beroep. Wil je mijn werk bewonderen dan kan je altijd eens kijken op <a
-                                href="https://unsplash.com/@drieaugu">mijn Unsplash</a>. Ook de foto van dit onderdeel
-                            is een creatie van mezelf!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Large -->
-        <div class="slide snap d-none d-sm-none d-md-none d-lg-block" id="fotografie_lg">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-md-12 col-lg-8 text-center text-lg-right">
-                        <h1>Bewijsstuk</h1>
-                        <h2>Fotografie</h2>
-                        <p class="lead">Deze kunst is al een tijdje een passie van me. Mijn oorspronkelijke plan was om
-                            fotografie te gaan studeren maar helaas is dat in deze dagen van technologie niet meer zo'n
-                            winstgevend beroep. Wil je mijn werk bewonderen dan kan je altijd eens kijken op <a
-                                href="https://unsplash.com/@drieaugu">mijn Unsplash</a>. Ook de foto van dit onderdeel
-                            is een creatie van mezelf!
-                        </p>
-                    </div>
-                    <div class="col-md-12 col-lg-4 text-center">
-                        <img src="./assets/img/fotografie.jpg" class="rounded-circle img-fluid" width="300" height="300"
-                            alt="Teamwerk">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a id="button"><i class="fas fa-arrow-circle-up"></i></a>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/ad873fe8dc.js" crossorigin="anonymous"></script>
-    <script>
-        window.onload = function () {
-            setTimeout(fade_out, 500)
-        }
-
-        function fade_out() {
-            jQuery("#loading").fadeOut("medium")
-            jQuery("body").css("overflow", "auto");
-        }
-    </script>
-    <script>
-        var btn = $('#button');
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
+            function fade_out() {
+                jQuery('#loading').fadeOut('medium');
+                jQuery('body').css('overflow', 'auto');
+                jQuery('.navbar').fadeIn('medium');
             }
-        });
-
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body, .snap-container').animate({
-                scrollTop: 0
-            }, '300');
-        });
-    </script>
-</body>
-
+        </script>
+        <script>
+            function readMore(more_section, more_button) {
+                if ($(more_section).hasClass('more-visible')) {
+                    $(more_section).removeClass('more-visible');
+                    $(more_section).addClass('more');
+                    $(more_button).text('Lees meer...');
+                } else {
+                    $(more_section).removeClass('more');
+                    $(more_section).addClass('more-visible');
+                    $(more_button).text('Lees minder...');
+                }
+            }
+        </script>
+    </body>
 </html>
