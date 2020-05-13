@@ -1,94 +1,99 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:700);
 .snap-container {
-  scroll-behavior: smooth;
-  height: 100vh;
+    scroll-behavior: smooth;
+    height: 100vh;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body,
 html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ebece9;
+    margin: 0;
+    padding: 0;
+    background-color: #ebece9;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: Poppins, sans-serif;
+    font-family: Poppins, sans-serif;
 }
 .masthead {
-  height: 100%;
-  background-image: url(../img/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    height: 100%;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1 {
-  font-weight: 700;
-  font-size: 5vh;
+    font-weight: 700;
+    font-size: 5vh;
 }
 .navbar {
-  background: 0 0;
+    background: 0 0;
 }
 .navbar-light-font {
-  border-color: #e9ebe8 !important;
+    border-color: #e9ebe8 !important;
 }
 .container-fluid {
-  height: 100%;
+    height: 100%;
 }
 .slide {
-  min-height: 100%;
-  background: #e9ebe8;
-  background: linear-gradient(90deg, rgba(233, 235, 232, 1) 0, rgba(224, 226, 221, 1) 100%);
+    min-height: 100%;
+    background: #e9ebe8;
+    background: linear-gradient(90deg, rgba(233, 235, 232, 1) 0, rgba(224, 226, 221, 1) 100%);
 }
 .parallax-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/parallax.jpg);
-  min-height: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/parallax.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .parallax-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/parallax-2.jpg);
-  min-height: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/parallax-2.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .parallax-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/parallax-3.jpg);
-  min-height: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/parallax-3.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media screen and (min-width: 992px) {
-  .parallax h1,
-  .parallax h2,
-  .parallax p {
-    padding-right: 20px;
-  }
+    .parallax h1,
+    .parallax h2,
+    .parallax p {
+        padding-right: 20px;
+    }
 }
 .parallax h1,
 .parallax h2,
 .parallax p {
-  color: #ebece9;
+    color: #ebece9;
 }
 .headshot {
-  padding-top: 20px;
-  padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 @media screen and (min-width: 992px) {
-  .enlarge-hover {
-    z-index: 9999;
-    transition: all 0.3s;
-  }
-  .enlarge-hover:hover {
-    margin-right: 50px;
-    transform: scale(1.5);
-  }
+    .enlarge-hover {
+        z-index: 9999;
+        transition: all 0.3s;
+    }
+    .enlarge-hover:hover {
+        margin-left: 50px;
+        transform: scale(1.5);
+    }
+}
+
+#topbtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
 }

@@ -1,1 +1,8 @@
-.snap-container{height:100vh;overflow-y:scroll;scroll-snap-type:y proximity}.snap{scroll-snap-align:start}
+.snap-container {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y proximity;
+}
+.snap {
+    scroll-snap-align: start;
+}
